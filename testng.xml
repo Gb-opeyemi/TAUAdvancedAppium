@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd"><suite name="All Test Suite"><test verbose="2" preserve-order="true" name="/Users/topeyemi/IdeaProjects/AppiumPageObject/src/test/java/tests/ToDo_Android.java"><classes><class name="tests.ToDo_Android"><methods><include name="test_add_task"/></methods></class></classes></test></suite>
