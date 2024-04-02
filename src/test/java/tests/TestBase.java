@@ -17,7 +17,6 @@ public class TestBase {
         capabilities.setCapability("platformName", "Android");
         capabilities.setCapability("automationName", "UiAutomator2");
         capabilities.setCapability("platformVersion", "12.0");
-        capabilities.setCapability("deviceName", "Emulator2");
         capabilities.setCapability("app", System.getProperty("user.dir") + "/apps/ToDo_1.24_Apkpure.apk");
         driver = new AndroidDriver(new URL("http://127.0.0.1:4723"), capabilities);
     }
