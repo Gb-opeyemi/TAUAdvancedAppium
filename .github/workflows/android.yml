@@ -12,19 +12,18 @@ jobs:
         with:
           distribution: 'temurin'
           java-version: '11'
-    
+
       - name: pull the project into the runner
         uses: actions/checkout@v3
 
       - name: setup appium
-      - run: |
-            npm install -g appium@v2.1.3
-            appium -v
-            appium &>/dev/null &
+        run: |
+          npm install -g appium@2.1.3
+          appium -v
+          appium &>/dev/null &
 
       - name: run appium android tests
         uses: reactivecircus/android-emulator-runner@v2
         with:
           api-level: 29
           script: mvn clean test -Pandroid
-            
